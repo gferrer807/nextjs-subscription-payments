@@ -34,3 +34,7 @@ export const toDateTime = (secs: number) => {
   t.setSeconds(secs);
   return t;
 };
+
+export const sanitizeOutput = (text: string) => {
+  
+} 

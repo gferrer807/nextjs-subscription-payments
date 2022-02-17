@@ -13,7 +13,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <div className="bg-black">
+    <div className="bg-gray-50">
       <UserContextProvider>
         <Layout>
           <Component {...pageProps} />
