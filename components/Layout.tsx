@@ -5,6 +5,8 @@ import Navbar from 'components/ui/Navbar';
 import Footer from 'components/ui/Footer';
 import { ReactNode } from 'react';
 import { PageMeta } from '../types';
+import Sidebar from '../components/ui/Sidebar'
+import Main from '../components/ui/Main'
 
 interface Props {
   children: ReactNode;
@@ -39,7 +41,10 @@ export default function Layout({ children, meta: pageMeta }: Props) {
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.cardImage} />
       </Head>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Sidebar />
+      {/* <Main id="skip" children={children}/> */}
+      {/* create a content component*/}
       <main id="skip">{children}</main>
       <Footer />
     </>

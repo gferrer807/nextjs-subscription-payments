@@ -1,5 +1,5 @@
 import { useState } from "react"
-import {getOutline} from './api/summarize'
+import {getOutline} from '../api/summarize'
 import { postData } from 'utils/helpers';
 import { QuestionMarkCircleIcon } from '@heroicons/react/outline'
 import LoadingDots from 'components/ui/LoadingDots';

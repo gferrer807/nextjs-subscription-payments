@@ -30,7 +30,7 @@ const createParagraph = async (req: NextApiRequest, res: NextApiResponse) => {
         const openai = new OpenAIApi(configuration)
 
         const output = await openai.createCompletion("text-davinci-001", {
-          prompt: `Create an essay about  ${req.body.prompt}`,
+          prompt: `${req.body.prompt}`,
           temperature: 1,
           max_tokens: 1500,
           top_p: 1,
